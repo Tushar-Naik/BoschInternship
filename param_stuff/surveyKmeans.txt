@@ -1,0 +1,21 @@
+data=read.csv("survey_null_modified.csv",head=FALSE)
+data1<-data[2:9]
+clus<-kmeans(data1,8)
+par(mfrow=c(3,3))
+plot(data1[,1],col=cluster$cluster+1,ylab='calories')
+plot(data1[,2],col=cluster$cluster+1,ylab='protein')
+plot(data1[,3],col=cluster$cluster+1,ylab='fat')
+plot(data1[,4],col=cluster$cluster+1,ylab='sodium')
+plot(data1[,5],col=cluster$cluster+1,ylab='Fiber')
+plot(data1[,6],col=cluster$cluster+1,ylab='carbs')
+plot(data1[,7],col=cluster$cluster+1,ylab='sugar')
+plot(data1[,8],col=cluster$cluster+1,ylab='potassium')
+seq=clus$cluster
+#write.table(seq,file="survey_null_modified_kmeangroups.csv",sep=",",append=TRUE,row.names=FALSE,col.names=FALSE)
+
+#elbow function
+data=read.csv("survey_null_modified.csv",head=FALSE)
+data1<-data[2:9]
+wss <- (nrow(data1)-1)*sum(apply(data1,2,var))
+for (i in 2:15) wss[i] <- sum(kmeans(data1,centers=i)$withinss)
+plot(1:15, wss, type="b", xlab="Number of Clusters",ylab="Within groups sum of squares")

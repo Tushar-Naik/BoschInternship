@@ -1,0 +1,20 @@
+Develop an automated scoring algorithm for student-written essays.
+http://www.kaggle.com/c/ASAP-AES
+
+Identify which authors correspond to the same person
+http://www.kaggle.com/c/kdd-cup-2013-author-disambiguation
+
+Predict the trajectory of a handwritten signature
+http://www.kaggle.com/c/icdar2013-stroke-recovery-from-offline-data
+
+Predict the salary of any UK job ad based on its contents
+http://www.kaggle.com/c/job-salary-prediction
+
+Predict which people are influential in a social network
+http://www.kaggle.com/c/predict-who-is-more-influential-in-a-social-network
+
+Predict which new questions asked on Stack Overflow will be closed
+http://www.kaggle.com/c/predict-closed-questions-on-stack-overflow
+
+Predict which songs a user will listen to.
+http://www.kaggle.com/c/msdchallenge
